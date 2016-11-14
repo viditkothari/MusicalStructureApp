@@ -12,20 +12,25 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Information">
+
+        <activity android:name=".Information" android:label="@string/labelInformationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HomeActivity">
+
+        <activity android:name=".HomeActivity" android:label="@string/labelHomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <data android:scheme="index.html" android:host="viditkothari.co.in" />
             </intent-filter>
         </activity>
-        <activity android:name=".Player" />
-        <activity android:name=".Configuration" />
+
+        <activity android:name=".Player" android:label="@string/labelPlayerActivity" />
+
+        <activity android:name=".Configuration" android:label="@string/labelConfigurationActivity" />
+
     </application>
 
 </manifest>

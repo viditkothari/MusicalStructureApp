@@ -4,6 +4,10 @@
 
 <resources>
     <string name="app_name">Musical Structure App</string>
+    <string name="labelInformationActivity">Music App Plan / Info</string>
+    <string name="labelHomeActivity">Music App Homescreen</string>
+    <string name="labelPlayerActivity">Music App Player Activity</string>
+    <string name="labelConfigurationActivity">Configure your player</string>
     <string name="btnNext">Next</string>
     <string name="homeTitle">I\'m feeling &#8230;&#8230;&#8230;</string>
     <string name="btnHappy">Happy</string>
@@ -15,6 +19,9 @@
     <string name="btnRewind">Rewind</string>
     <string name="btnForward">Forward</string>
     <string name="configurationMessage">How much time (hours) left to put player to sleep?</string>
+    <string name="descHomeActivity">User will click/tap on his/her mood to tell the app the kind of music to play in the next activity</string>
+    <string name="descPlayerActivity">Click on the Play Button at the center to start playing songs corresponding to the mood selected in the previous (HomeActivity) screen</string>
+    <string name="descConfigActivity">Configure settings like sleep timer, quality of streaming, and others</string>
     <string-array name="spinnerValues">
         <item>01</item>
         <item>02</item>
