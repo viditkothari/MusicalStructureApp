@@ -20,7 +20,8 @@
             android:id="@+id/infoTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="A" />
+            android:text="A"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/BtnNext"
