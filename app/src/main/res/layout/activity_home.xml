@@ -1,14 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><!--~~~~~~~~~~~~~~~~~~~~~~
-  ~ Copyright (c) 2016. This creation of Vidit Kothari (c) cannot be reproduced or modified or resell without prior written consent
-  ~~~~~~~~~~~~~~~~~~~~~-->
+<?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context="in.co.viditkothari.musicalstructureapp.HomeActivity"
     android:id="@+id/activity_home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="in.co.viditkothari.musicalstructureapp.HomeActivity">
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,7 +17,7 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:text="I'm feeling ..."
+        android:text="@string/homeTitle"
         android:layout_gravity="center_horizontal"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp" />
@@ -32,123 +30,76 @@
         <!-- Happy Button -->
         <LinearLayout
             android:id="@+id/btnHappy"
-            android:layout_width="320dp"
-            android:layout_height="72dp"
-            android:orientation="horizontal"
-            android:layout_marginBottom="8dp">
+            style="@style/btnLinearLayout">
 
             <ImageView
                 android:id="@+id/imgHappy"
                 android:src="@drawable/happyface"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:padding="8dp"
+                style="@style/btnLinearLayout_ImgView"
+                android:contentDescription="@string/btnHappy"
                 android:background="@android:color/holo_green_dark" />
 
             <TextView
-                android:layout_width="0dp"
-                android:layout_weight="2"
-                android:layout_height="match_parent"
                 android:background="@android:color/holo_green_dark"
-                android:text="Happy"
-                android:textSize="32sp"
-                android:textStyle="bold"
-                android:textColor="@android:color/white"
-                android:padding="16dp"
-                android:textAlignment="textStart"
-                android:gravity="start" />
+                android:text="@string/btnHappy"
+                style="@style/btnLinearLayout_TextView"/>
 
         </LinearLayout>
 
         <!-- Loving Button -->
         <LinearLayout
             android:id="@+id/btnLoving"
-            android:layout_width="320dp"
-            android:layout_height="72dp"
-            android:orientation="horizontal"
             android:layout_below="@id/btnHappy"
-            android:layout_marginBottom="8dp">
+            style="@style/btnLinearLayout">
 
             <ImageView
                 android:src="@drawable/lovingface"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:padding="8dp"
+                style="@style/btnLinearLayout_ImgView"
+                android:contentDescription="@string/btnLoving"
                 android:background="#e91e49" />
 
             <TextView
-                android:layout_width="0dp"
-                android:layout_weight="2"
-                android:layout_height="match_parent"
                 android:background="#e91e49"
-                android:text="In Love"
-                android:textSize="32sp"
-                android:textStyle="bold"
-                android:textColor="@android:color/white"
-                android:padding="16dp"
-                android:textAlignment="textStart"
-                android:gravity="start" />
+                android:text="@string/btnLoving"
+                style="@style/btnLinearLayout_TextView"/>
 
         </LinearLayout>
 
         <!-- Sad Button -->
         <LinearLayout
             android:id="@+id/btnSad"
-            android:layout_width="320dp"
-            android:layout_height="72dp"
-            android:orientation="horizontal"
-            android:layout_marginBottom="8dp"
-            android:layout_below="@id/btnLoving">
+            android:layout_below="@id/btnLoving"
+            style="@style/btnLinearLayout">
 
             <ImageView
                 android:src="@drawable/sadface"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:padding="8dp"
+                style="@style/btnLinearLayout_ImgView"
+                android:contentDescription="@string/btnSad"
                 android:background="#b85929" />
 
             <TextView
-                android:layout_width="0dp"
-                android:layout_weight="2"
-                android:layout_height="match_parent"
                 android:background="#b85929"
-                android:text="Sad"
-                android:textSize="32sp"
-                android:textStyle="bold"
-                android:textColor="@android:color/white"
-                android:padding="16dp"
-                android:textAlignment="textStart"
-                android:gravity="start" />
+                android:text="@string/btnSad"
+                style="@style/btnLinearLayout_TextView"/>
 
         </LinearLayout>
 
         <!-- Angry Button -->
         <LinearLayout
             android:id="@+id/btnAngry"
-            android:layout_width="320dp"
-            android:layout_height="72dp"
-            android:orientation="horizontal"
-            android:layout_below="@id/btnSad">
+            android:layout_below="@id/btnSad"
+            style="@style/btnLinearLayout">
 
             <ImageView
                 android:src="@drawable/angryface"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:padding="8dp"
+                style="@style/btnLinearLayout_ImgView"
+                android:contentDescription="@string/btnAngry"
                 android:background="@android:color/holo_red_dark" />
 
             <TextView
-                android:layout_width="0dp"
-                android:layout_weight="2"
-                android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
-                android:text="Angry"
-                android:textSize="32sp"
-                android:textStyle="bold"
-                android:textColor="@android:color/white"
-                android:padding="16dp"
-                android:textAlignment="textStart"
-                android:gravity="start" />
+                android:text="@string/btnAngry"
+                style="@style/btnLinearLayout_TextView"/>
 
         </LinearLayout>
 

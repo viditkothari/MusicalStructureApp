@@ -4,4 +4,27 @@
 
 <resources>
     <string name="app_name">Musical Structure App</string>
+    <string name="btnNext">Next</string>
+    <string name="homeTitle">I\'m feeling &#8230;&#8230;&#8230;</string>
+    <string name="btnHappy">Happy</string>
+    <string name="btnLoving">In Love</string>
+    <string name="btnSad">Sad</string>
+    <string name="btnAngry">Angry</string>
+    <string name="songDetails">NAME\nArtist Name | Genre</string>
+    <string name="currentSongArtwork">Currently playing song\'s artwork</string>
+    <string name="btnRewind">Rewind</string>
+    <string name="btnForward">Forward</string>
+    <string name="configurationMessage">How much time (hours) left to put player to sleep?</string>
+    <string-array name="spinnerValues">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+    </string-array>
 </resources>

@@ -24,6 +24,7 @@
         <ImageView
             android:layout_width="72dp"
             android:layout_height="72dp"
+            android:contentDescription="@string/currentSongArtwork"
             android:background="@color/colorPrimary" />
 
         <TextView
@@ -33,7 +34,7 @@
             android:padding="16dp"
             android:textColor="#FFFFFF"
             android:textAlignment="center"
-            android:text="SONG NAME\nArtist Name | Genre" />
+            android:text="@string/songDetails" />
 
     </LinearLayout>
 
@@ -43,6 +44,7 @@
         android:layout_width="344dp"
         android:layout_height="344dp"
         android:layout_below="@id/inPlaySongInfo"
+        android:contentDescription="@string/currentSongArtwork"
         android:layout_centerHorizontal="true" />
 
     <LinearLayout
@@ -56,12 +58,14 @@
             android:src="@drawable/rewindicon"
             android:layout_width="72dp"
             android:layout_height="72dp"
-            android:layout_marginRight="72dp" />
+            android:contentDescription="@string/btnRewind"
+            android:layout_marginEnd="72dp"  />
 
         <ImageView
             android:src="@drawable/forwardicon"
             android:layout_width="72dp"
-            android:layout_height="72dp" />
+            android:layout_height="72dp"
+            android:contentDescription="@string/btnForward" />
 
     </LinearLayout>
 

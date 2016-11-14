@@ -1,7 +1,3 @@
-/*************************
- * Copyright (c) 2016. This creation of Vidit Kothari (c) cannot be reproduced or modified or resell without prior written consent
- ************************/
-
 package in.co.viditkothari.musicalstructureapp;
 
 import android.support.v7.app.AppCompatActivity;
