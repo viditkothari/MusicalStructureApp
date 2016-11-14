@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?><!--~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright (c) 2016. This creation of Vidit Kothari (c) cannot be reproduced or modified or resell without prior written consent
+  ~~~~~~~~~~~~~~~~~~~~~-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="in.co.viditkothari.musicalstructureapp.Player"
+    android:id="@+id/activity_player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:id="@+id/inPlaySongInfo"
+        android:layout_width="344dp"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:text="SONG NAME\nArtist Name | Genre" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/playingImage"
+        android:src="@drawable/playicon"
+        android:layout_width="344dp"
+        android:layout_height="344dp"
+        android:layout_below="@id/inPlaySongInfo"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="216dp"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/playingImage"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:src="@drawable/rewindicon"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginRight="72dp" />
+
+        <ImageView
+            android:src="@drawable/forwardicon"
+            android:layout_width="72dp"
+            android:layout_height="72dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
